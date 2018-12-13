@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54A1E1A41060A061BD55ACB8 /* Pods_BijlessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1FC5EB217B72BB8CA9287C /* Pods_BijlessAppUITests.framework */; };
+		83752F1821C2A296005243BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F1721C2A296005243BD /* AppDelegate.swift */; };
+		83752F1A21C2A296005243BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F1921C2A296005243BD /* ViewController.swift */; };
+		83752F1D21C2A296005243BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83752F1B21C2A296005243BD /* Main.storyboard */; };
+		83752F1F21C2A298005243BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83752F1E21C2A298005243BD /* Assets.xcassets */; };
+		83752F2221C2A298005243BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83752F2021C2A298005243BD /* LaunchScreen.storyboard */; };
+		83752F2D21C2A298005243BD /* BijlessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F2C21C2A298005243BD /* BijlessAppTests.swift */; };
+		83752F3821C2A299005243BD /* BijlessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F3721C2A299005243BD /* BijlessAppUITests.swift */; };
+		83752F4821C2A5B6005243BD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F4721C2A5B6005243BD /* Post.swift */; };
+		83752F4A21C2A71B005243BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83752F4921C2A71B005243BD /* GoogleService-Info.plist */; };
+		83752F5021C2A8F1005243BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F4F21C2A8F0005243BD /* TableViewCell.swift */; };
+		83752F5221C2AB9B005243BD /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F5121C2AB9B005243BD /* ComposeViewController.swift */; };
+		83752F5521C2AF57005243BD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F5321C2AF57005243BD /* DetailVC.swift */; };
+		83752F5621C2AF57005243BD /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83752F5421C2AF57005243BD /* DetailVC.xib */; };
+		AC59A469222C3307B5E503D0 /* Pods_BijlessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348F81E7E7362E693CD97939 /* Pods_BijlessApp.framework */; };
+		B04A8C35DEB6AEB9271A6C2C /* Pods_BijlessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B2C1487FF6C46C541D3229 /* Pods_BijlessAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83752F2921C2A298005243BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83752F0C21C2A296005243BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83752F1321C2A296005243BD;
+			remoteInfo = BijlessApp;
+		};
+		83752F3421C2A299005243BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83752F0C21C2A296005243BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83752F1321C2A296005243BD;
+			remoteInfo = BijlessApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FE73A34FAE1B8BAB086A21A /* Pods-BijlessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessApp/Pods-BijlessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1DB89E047A6613F0276FDF70 /* Pods-BijlessAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppUITests/Pods-BijlessAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2CE8633A1FB807341366BE77 /* Pods-BijlessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppTests/Pods-BijlessAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		348F81E7E7362E693CD97939 /* Pods_BijlessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijlessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FF68A940C6E9C2F0E9CCFD /* Pods-BijlessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppUITests/Pods-BijlessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83752F1421C2A296005243BD /* BijlessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BijlessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83752F1721C2A296005243BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83752F1921C2A296005243BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83752F1C21C2A296005243BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83752F1E21C2A298005243BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83752F2121C2A298005243BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83752F2321C2A298005243BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83752F2821C2A298005243BD /* BijlessAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BijlessAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83752F2C21C2A298005243BD /* BijlessAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BijlessAppTests.swift; sourceTree = "<group>"; };
+		83752F2E21C2A298005243BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83752F3321C2A299005243BD /* BijlessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BijlessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83752F3721C2A299005243BD /* BijlessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BijlessAppUITests.swift; sourceTree = "<group>"; };
+		83752F3921C2A299005243BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83752F4721C2A5B6005243BD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		83752F4921C2A71B005243BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83752F4F21C2A8F0005243BD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		83752F5121C2AB9B005243BD /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		83752F5321C2AF57005243BD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		83752F5421C2AF57005243BD /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		AA1FC5EB217B72BB8CA9287C /* Pods_BijlessAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijlessAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2AB0E886F9DF20F7047DD69 /* Pods-BijlessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppTests/Pods-BijlessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBA0ADA40F7CE3CBCD63B0E9 /* Pods-BijlessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessApp/Pods-BijlessApp.release.xcconfig"; sourceTree = "<group>"; };
+		F4B2C1487FF6C46C541D3229 /* Pods_BijlessAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijlessAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83752F1121C2A296005243BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC59A469222C3307B5E503D0 /* Pods_BijlessApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83752F2521C2A298005243BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04A8C35DEB6AEB9271A6C2C /* Pods_BijlessAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83752F3021C2A299005243BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A1E1A41060A061BD55ACB8 /* Pods_BijlessAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		438E0DE7E58D28653DA0606B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FE73A34FAE1B8BAB086A21A /* Pods-BijlessApp.debug.xcconfig */,
+				EBA0ADA40F7CE3CBCD63B0E9 /* Pods-BijlessApp.release.xcconfig */,
+				E2AB0E886F9DF20F7047DD69 /* Pods-BijlessAppTests.debug.xcconfig */,
+				2CE8633A1FB807341366BE77 /* Pods-BijlessAppTests.release.xcconfig */,
+				49FF68A940C6E9C2F0E9CCFD /* Pods-BijlessAppUITests.debug.xcconfig */,
+				1DB89E047A6613F0276FDF70 /* Pods-BijlessAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83752F0B21C2A296005243BD = {
+			isa = PBXGroup;
+			children = (
+				83752F1621C2A296005243BD /* BijlessApp */,
+				83752F2B21C2A298005243BD /* BijlessAppTests */,
+				83752F3621C2A299005243BD /* BijlessAppUITests */,
+				83752F1521C2A296005243BD /* Products */,
+				438E0DE7E58D28653DA0606B /* Pods */,
+				D6E26B7108FE1ADE515372AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83752F1521C2A296005243BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83752F1421C2A296005243BD /* BijlessApp.app */,
+				83752F2821C2A298005243BD /* BijlessAppTests.xctest */,
+				83752F3321C2A299005243BD /* BijlessAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83752F1621C2A296005243BD /* BijlessApp */ = {
+			isa = PBXGroup;
+			children = (
+				83752F5721C2AF5F005243BD /* DetailVC */,
+				83752F1721C2A296005243BD /* AppDelegate.swift */,
+				83752F1921C2A296005243BD /* ViewController.swift */,
+				83752F4F21C2A8F0005243BD /* TableViewCell.swift */,
+				83752F5121C2AB9B005243BD /* ComposeViewController.swift */,
+				83752F1B21C2A296005243BD /* Main.storyboard */,
+				83752F1E21C2A298005243BD /* Assets.xcassets */,
+				83752F2021C2A298005243BD /* LaunchScreen.storyboard */,
+				83752F4721C2A5B6005243BD /* Post.swift */,
+				83752F2321C2A298005243BD /* Info.plist */,
+				83752F4921C2A71B005243BD /* GoogleService-Info.plist */,
+			);
+			path = BijlessApp;
+			sourceTree = "<group>";
+		};
+		83752F2B21C2A298005243BD /* BijlessAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				83752F2C21C2A298005243BD /* BijlessAppTests.swift */,
+				83752F2E21C2A298005243BD /* Info.plist */,
+			);
+			path = BijlessAppTests;
+			sourceTree = "<group>";
+		};
+		83752F3621C2A299005243BD /* BijlessAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83752F3721C2A299005243BD /* BijlessAppUITests.swift */,
+				83752F3921C2A299005243BD /* Info.plist */,
+			);
+			path = BijlessAppUITests;
+			sourceTree = "<group>";
+		};
+		83752F5721C2AF5F005243BD /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				83752F5321C2AF57005243BD /* DetailVC.swift */,
+				83752F5421C2AF57005243BD /* DetailVC.xib */,
+			);
+			path = DetailVC;
+			sourceTree = "<group>";
+		};
+		D6E26B7108FE1ADE515372AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				348F81E7E7362E693CD97939 /* Pods_BijlessApp.framework */,
+				F4B2C1487FF6C46C541D3229 /* Pods_BijlessAppTests.framework */,
+				AA1FC5EB217B72BB8CA9287C /* Pods_BijlessAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83752F1321C2A296005243BD /* BijlessApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83752F3C21C2A299005243BD /* Build configuration list for PBXNativeTarget "BijlessApp" */;
+			buildPhases = (
+				56C3005E623D84079C7D0C3B /* [CP] Check Pods Manifest.lock */,
+				83752F1021C2A296005243BD /* Sources */,
+				83752F1121C2A296005243BD /* Frameworks */,
+				83752F1221C2A296005243BD /* Resources */,
+				72936DE69134E81C47459817 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BijlessApp;
+			productName = BijlessApp;
+			productReference = 83752F1421C2A296005243BD /* BijlessApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83752F2721C2A298005243BD /* BijlessAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83752F3F21C2A299005243BD /* Build configuration list for PBXNativeTarget "BijlessAppTests" */;
+			buildPhases = (
+				D7C5ACF687FAD36CB21AE7E4 /* [CP] Check Pods Manifest.lock */,
+				83752F2421C2A298005243BD /* Sources */,
+				83752F2521C2A298005243BD /* Frameworks */,
+				83752F2621C2A298005243BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83752F2A21C2A298005243BD /* PBXTargetDependency */,
+			);
+			name = BijlessAppTests;
+			productName = BijlessAppTests;
+			productReference = 83752F2821C2A298005243BD /* BijlessAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83752F3221C2A299005243BD /* BijlessAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83752F4221C2A299005243BD /* Build configuration list for PBXNativeTarget "BijlessAppUITests" */;
+			buildPhases = (
+				FE7120998103412B5ABA4DED /* [CP] Check Pods Manifest.lock */,
+				83752F2F21C2A299005243BD /* Sources */,
+				83752F3021C2A299005243BD /* Frameworks */,
+				83752F3121C2A299005243BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83752F3521C2A299005243BD /* PBXTargetDependency */,
+			);
+			name = BijlessAppUITests;
+			productName = BijlessAppUITests;
+			productReference = 83752F3321C2A299005243BD /* BijlessAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83752F0C21C2A296005243BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Fontys;
+				TargetAttributes = {
+					83752F1321C2A296005243BD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					83752F2721C2A298005243BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 83752F1321C2A296005243BD;
+					};
+					83752F3221C2A299005243BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 83752F1321C2A296005243BD;
+					};
+				};
+			};
+			buildConfigurationList = 83752F0F21C2A296005243BD /* Build configuration list for PBXProject "BijlessApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83752F0B21C2A296005243BD;
+			productRefGroup = 83752F1521C2A296005243BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83752F1321C2A296005243BD /* BijlessApp */,
+				83752F2721C2A298005243BD /* BijlessAppTests */,
+				83752F3221C2A299005243BD /* BijlessAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83752F1221C2A296005243BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83752F2221C2A298005243BD /* LaunchScreen.storyboard in Resources */,
+				83752F4A21C2A71B005243BD /* GoogleService-Info.plist in Resources */,
+				83752F1F21C2A298005243BD /* Assets.xcassets in Resources */,
+				83752F1D21C2A296005243BD /* Main.storyboard in Resources */,
+				83752F5621C2AF57005243BD /* DetailVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83752F2621C2A298005243BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83752F3121C2A299005243BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56C3005E623D84079C7D0C3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BijlessApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72936DE69134E81C47459817 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BijlessApp/Pods-BijlessApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BijlessApp/Pods-BijlessApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C5ACF687FAD36CB21AE7E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BijlessAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE7120998103412B5ABA4DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BijlessAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83752F1021C2A296005243BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83752F5221C2AB9B005243BD /* ComposeViewController.swift in Sources */,
+				83752F4821C2A5B6005243BD /* Post.swift in Sources */,
+				83752F5021C2A8F1005243BD /* TableViewCell.swift in Sources */,
+				83752F1A21C2A296005243BD /* ViewController.swift in Sources */,
+				83752F1821C2A296005243BD /* AppDelegate.swift in Sources */,
+				83752F5521C2AF57005243BD /* DetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83752F2421C2A298005243BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83752F2D21C2A298005243BD /* BijlessAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83752F2F21C2A299005243BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83752F3821C2A299005243BD /* BijlessAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83752F2A21C2A298005243BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83752F1321C2A296005243BD /* BijlessApp */;
+			targetProxy = 83752F2921C2A298005243BD /* PBXContainerItemProxy */;
+		};
+		83752F3521C2A299005243BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83752F1321C2A296005243BD /* BijlessApp */;
+			targetProxy = 83752F3421C2A299005243BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83752F1B21C2A296005243BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83752F1C21C2A296005243BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83752F2021C2A298005243BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83752F2121C2A298005243BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83752F3A21C2A299005243BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83752F3B21C2A299005243BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83752F3D21C2A299005243BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE73A34FAE1B8BAB086A21A /* Pods-BijlessApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNXKQEWD8P;
+				INFOPLIST_FILE = BijlessApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.BijlessApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83752F3E21C2A299005243BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA0ADA40F7CE3CBCD63B0E9 /* Pods-BijlessApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNXKQEWD8P;
+				INFOPLIST_FILE = BijlessApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.BijlessApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83752F4021C2A299005243BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2AB0E886F9DF20F7047DD69 /* Pods-BijlessAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNXKQEWD8P;
+				INFOPLIST_FILE = BijlessAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.BijlessAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BijlessApp.app/BijlessApp";
+			};
+			name = Debug;
+		};
+		83752F4121C2A299005243BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE8633A1FB807341366BE77 /* Pods-BijlessAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNXKQEWD8P;
+				INFOPLIST_FILE = BijlessAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.BijlessAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BijlessApp.app/BijlessApp";
+			};
+			name = Release;
+		};
+		83752F4321C2A299005243BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49FF68A940C6E9C2F0E9CCFD /* Pods-BijlessAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNXKQEWD8P;
+				INFOPLIST_FILE = BijlessAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.BijlessAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BijlessApp;
+			};
+			name = Debug;
+		};
+		83752F4421C2A299005243BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB89E047A6613F0276FDF70 /* Pods-BijlessAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNXKQEWD8P;
+				INFOPLIST_FILE = BijlessAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.BijlessAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BijlessApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83752F0F21C2A296005243BD /* Build configuration list for PBXProject "BijlessApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83752F3A21C2A299005243BD /* Debug */,
+				83752F3B21C2A299005243BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83752F3C21C2A299005243BD /* Build configuration list for PBXNativeTarget "BijlessApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83752F3D21C2A299005243BD /* Debug */,
+				83752F3E21C2A299005243BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83752F3F21C2A299005243BD /* Build configuration list for PBXNativeTarget "BijlessAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83752F4021C2A299005243BD /* Debug */,
+				83752F4121C2A299005243BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83752F4221C2A299005243BD /* Build configuration list for PBXNativeTarget "BijlessAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83752F4321C2A299005243BD /* Debug */,
+				83752F4421C2A299005243BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83752F0C21C2A296005243BD /* Project object */;
+}

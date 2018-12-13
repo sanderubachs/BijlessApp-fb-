@@ -1,0 +1,6 @@
+framework module Pods_BijlessApp {
+  umbrella header "Pods-BijlessApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
