@@ -12,7 +12,10 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var lblNaam: UILabel!
     @IBOutlet weak var lblOnderwerp: UILabel!
-    
+    @IBOutlet weak var lblBeschrijving: UILabel!
+    @IBOutlet weak var lblTaal: UILabel!
+    @IBOutlet weak var lblDatum: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
