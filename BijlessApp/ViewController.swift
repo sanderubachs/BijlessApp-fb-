@@ -8,14 +8,24 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
+
+var currentUserChatId = String()
+
+struct User {
+    let username: String!
+    let uid: String!
+}
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var users = [User]()
 
     @IBOutlet weak var tableView: UITableView!
 
     var ref: DatabaseReference!
     
-    var postData = [Post]()
+//    var postData = [Post]()
     
     var onderwerpData = [String]()
     var naamData = [String]()
@@ -25,6 +35,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //aanmaken user voor chat
+        let uid = Auth.auth().currentUser?.uid
+        let database = Database.database().reference()
+        database.child("Users").queryOrderedByKey().observe(.childAdded, with: {
+            
+            snapshot in
+            
+            let username = (snapshot.value as? NSDictionary)?["userNaam"] as? String ?? ""
+            let uid = (snapshot.value as? NSDictionary)?["uid"] as? String ?? ""
+            self.users.append(User(username: username, uid: uid))
+            self.tableView.reloadData()
+        })
+        
+        self.tableView.reloadData()
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -94,19 +119,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailVC()
 //        vc.commonInit(postData[indexPath.item])
-        vc.commonInit2(naam: naamData[indexPath.item],
-                       onderwerp: onderwerpData[indexPath.item],
-                       datum: datumData[indexPath.item],
-                       taal: taalData[indexPath.item],
-                       beschrijving: beschrijvingData[indexPath.item]
-                      )
-        self.navigationController?.pushViewController(vc, animated: true)
-        self.tableView.deselectRow(at: indexPath, animated: true)
+//        vc.commonInit2(naam: naamData[indexPath.item],
+//                       onderwerp: onderwerpData[indexPath.item],
+//                       datum: datumData[indexPath.item],
+//                       taal: taalData[indexPath.item],
+//                       beschrijving: beschrijvingData[indexPath.item]
+//                      )
+//        self.navigationController?.pushViewController(vc, animated: true)
+//        self.tableView.deselectRow(at: indexPath, animated: true)
+//
+////        print("postData: \(postData)")
+//        print("naamData: \(naamData)")
+//        print("onderwerpData: \(onderwerpData)")
+//
         
-//        print("postData: \(postData)")
-        print("naamData: \(naamData)")
-        print("onderwerpData: \(onderwerpData)")
-
+        currentUserChatId = users[indexPath.row].uid
+        
+        let vcChat = ChatViewController()
+        vcChat.commonInit(users[indexPath.row].username)
+        vcChat.commonInit2(naam: naamData[indexPath.item],
+                                onderwerp: onderwerpData[indexPath.item],
+                                datum: datumData[indexPath.item],
+                                taal: taalData[indexPath.item],
+                                beschrijving: beschrijvingData[indexPath.item])
+        print("users: \(users[indexPath.row].username!)")
+//        print("onderwerp: \(onderwerpData[indexPath.item])")
+//        print("taal : \(taalData[indexPath.item])")
     }
 }
 

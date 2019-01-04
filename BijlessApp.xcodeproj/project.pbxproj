@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		54A1E1A41060A061BD55ACB8 /* Pods_BijlessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1FC5EB217B72BB8CA9287C /* Pods_BijlessAppUITests.framework */; };
+		83080FEB21DF8F6F000D70B4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83080FEA21DF8F6F000D70B4 /* ChatViewController.swift */; };
+		83080FED21DF9EBF000D70B4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83080FEC21DF9EBF000D70B4 /* Helper.swift */; };
 		8313364321C7B0D200ED399E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8313364221C7B0D200ED399E /* GoogleService-Info.plist */; };
 		83752F1821C2A296005243BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F1721C2A296005243BD /* AppDelegate.swift */; };
 		83752F1A21C2A296005243BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F1921C2A296005243BD /* ViewController.swift */; };
@@ -50,6 +52,8 @@
 		2CE8633A1FB807341366BE77 /* Pods-BijlessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppTests/Pods-BijlessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		348F81E7E7362E693CD97939 /* Pods_BijlessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijlessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FF68A940C6E9C2F0E9CCFD /* Pods-BijlessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppUITests/Pods-BijlessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83080FEA21DF8F6F000D70B4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		83080FEC21DF9EBF000D70B4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		8313364221C7B0D200ED399E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/googlelist/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83752F1421C2A296005243BD /* BijlessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BijlessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83752F1721C2A296005243BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,14 +152,16 @@
 				83752F1921C2A296005243BD /* ViewController.swift */,
 				83752F4F21C2A8F0005243BD /* TableViewCell.swift */,
 				83752F5121C2AB9B005243BD /* ComposeViewController.swift */,
+				83080FEA21DF8F6F000D70B4 /* ChatViewController.swift */,
+				83752F1B21C2A296005243BD /* Main.storyboard */,
 				8385F07D21CCD63700C0FB67 /* loginViewController.swift */,
 				8385F07F21CCD6D500C0FB67 /* registerViewController.swift */,
-				83752F1B21C2A296005243BD /* Main.storyboard */,
 				83752F1E21C2A298005243BD /* Assets.xcassets */,
 				83752F2021C2A298005243BD /* LaunchScreen.storyboard */,
-				83752F4721C2A5B6005243BD /* Post.swift */,
 				83752F2321C2A298005243BD /* Info.plist */,
 				8313364221C7B0D200ED399E /* GoogleService-Info.plist */,
+				83752F4721C2A5B6005243BD /* Post.swift */,
+				83080FEC21DF9EBF000D70B4 /* Helper.swift */,
 			);
 			path = BijlessApp;
 			sourceTree = "<group>";
@@ -438,6 +444,8 @@
 				83752F5021C2A8F1005243BD /* TableViewCell.swift in Sources */,
 				83752F1A21C2A296005243BD /* ViewController.swift in Sources */,
 				83752F1821C2A296005243BD /* AppDelegate.swift in Sources */,
+				83080FED21DF9EBF000D70B4 /* Helper.swift in Sources */,
+				83080FEB21DF8F6F000D70B4 /* ChatViewController.swift in Sources */,
 				83752F5521C2AF57005243BD /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
