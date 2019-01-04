@@ -16,6 +16,7 @@
                 <outlet property="datumLabel" destination="GHF-dZ-mnU" id="nST-AJ-0JA"/>
                 <outlet property="naamLabel" destination="FPL-Kz-zlR" id="oVP-Mo-tVd"/>
                 <outlet property="onderwerpLabel" destination="t2d-Ga-7F9" id="Aqe-s2-fh2"/>
+                <outlet property="reactieInput" destination="p2a-e8-SBY" id="UM2-CI-ODd"/>
                 <outlet property="reactieLabel" destination="Xki-zh-n22" id="sLL-8h-PFf"/>
                 <outlet property="taalLabel" destination="qja-ru-uiB" id="Zmv-nx-qfI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

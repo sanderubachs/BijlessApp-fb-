@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54A1E1A41060A061BD55ACB8 /* Pods_BijlessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1FC5EB217B72BB8CA9287C /* Pods_BijlessAppUITests.framework */; };
+		8313364321C7B0D200ED399E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8313364221C7B0D200ED399E /* GoogleService-Info.plist */; };
 		83752F1821C2A296005243BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F1721C2A296005243BD /* AppDelegate.swift */; };
 		83752F1A21C2A296005243BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F1921C2A296005243BD /* ViewController.swift */; };
 		83752F1D21C2A296005243BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83752F1B21C2A296005243BD /* Main.storyboard */; };
@@ -16,11 +17,12 @@
 		83752F2D21C2A298005243BD /* BijlessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F2C21C2A298005243BD /* BijlessAppTests.swift */; };
 		83752F3821C2A299005243BD /* BijlessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F3721C2A299005243BD /* BijlessAppUITests.swift */; };
 		83752F4821C2A5B6005243BD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F4721C2A5B6005243BD /* Post.swift */; };
-		83752F4A21C2A71B005243BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83752F4921C2A71B005243BD /* GoogleService-Info.plist */; };
 		83752F5021C2A8F1005243BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F4F21C2A8F0005243BD /* TableViewCell.swift */; };
 		83752F5221C2AB9B005243BD /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F5121C2AB9B005243BD /* ComposeViewController.swift */; };
 		83752F5521C2AF57005243BD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F5321C2AF57005243BD /* DetailVC.swift */; };
 		83752F5621C2AF57005243BD /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83752F5421C2AF57005243BD /* DetailVC.xib */; };
+		8385F07E21CCD63700C0FB67 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385F07D21CCD63700C0FB67 /* loginViewController.swift */; };
+		8385F08021CCD6D500C0FB67 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385F07F21CCD6D500C0FB67 /* registerViewController.swift */; };
 		AC59A469222C3307B5E503D0 /* Pods_BijlessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348F81E7E7362E693CD97939 /* Pods_BijlessApp.framework */; };
 		B04A8C35DEB6AEB9271A6C2C /* Pods_BijlessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B2C1487FF6C46C541D3229 /* Pods_BijlessAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,7 @@
 		2CE8633A1FB807341366BE77 /* Pods-BijlessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppTests/Pods-BijlessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		348F81E7E7362E693CD97939 /* Pods_BijlessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijlessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FF68A940C6E9C2F0E9CCFD /* Pods-BijlessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppUITests/Pods-BijlessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8313364221C7B0D200ED399E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/googlelist/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83752F1421C2A296005243BD /* BijlessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BijlessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83752F1721C2A296005243BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83752F1921C2A296005243BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,11 +65,12 @@
 		83752F3721C2A299005243BD /* BijlessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BijlessAppUITests.swift; sourceTree = "<group>"; };
 		83752F3921C2A299005243BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83752F4721C2A5B6005243BD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		83752F4921C2A71B005243BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83752F4F21C2A8F0005243BD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		83752F5121C2AB9B005243BD /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		83752F5321C2AF57005243BD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		83752F5421C2AF57005243BD /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		8385F07D21CCD63700C0FB67 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = BijlessAppUITests/loginViewController.swift; sourceTree = SOURCE_ROOT; };
+		8385F07F21CCD6D500C0FB67 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		AA1FC5EB217B72BB8CA9287C /* Pods_BijlessAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijlessAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AB0E886F9DF20F7047DD69 /* Pods-BijlessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessAppTests/Pods-BijlessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBA0ADA40F7CE3CBCD63B0E9 /* Pods-BijlessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijlessApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BijlessApp/Pods-BijlessApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,12 +148,14 @@
 				83752F1921C2A296005243BD /* ViewController.swift */,
 				83752F4F21C2A8F0005243BD /* TableViewCell.swift */,
 				83752F5121C2AB9B005243BD /* ComposeViewController.swift */,
+				8385F07D21CCD63700C0FB67 /* loginViewController.swift */,
+				8385F07F21CCD6D500C0FB67 /* registerViewController.swift */,
 				83752F1B21C2A296005243BD /* Main.storyboard */,
 				83752F1E21C2A298005243BD /* Assets.xcassets */,
 				83752F2021C2A298005243BD /* LaunchScreen.storyboard */,
 				83752F4721C2A5B6005243BD /* Post.swift */,
 				83752F2321C2A298005243BD /* Info.plist */,
-				83752F4921C2A71B005243BD /* GoogleService-Info.plist */,
+				8313364221C7B0D200ED399E /* GoogleService-Info.plist */,
 			);
 			path = BijlessApp;
 			sourceTree = "<group>";
@@ -300,8 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				83752F2221C2A298005243BD /* LaunchScreen.storyboard in Resources */,
-				83752F4A21C2A71B005243BD /* GoogleService-Info.plist in Resources */,
 				83752F1F21C2A298005243BD /* Assets.xcassets in Resources */,
+				8313364321C7B0D200ED399E /* GoogleService-Info.plist in Resources */,
 				83752F1D21C2A296005243BD /* Main.storyboard in Resources */,
 				83752F5621C2AF57005243BD /* DetailVC.xib in Resources */,
 			);
@@ -355,6 +361,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BijlessApp/Pods-BijlessApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -363,6 +370,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -423,8 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8385F07E21CCD63700C0FB67 /* loginViewController.swift in Sources */,
 				83752F5221C2AB9B005243BD /* ComposeViewController.swift in Sources */,
 				83752F4821C2A5B6005243BD /* Post.swift in Sources */,
+				8385F08021CCD6D500C0FB67 /* registerViewController.swift in Sources */,
 				83752F5021C2A8F1005243BD /* TableViewCell.swift in Sources */,
 				83752F1A21C2A296005243BD /* ViewController.swift in Sources */,
 				83752F1821C2A296005243BD /* AppDelegate.swift in Sources */,

@@ -15,13 +15,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     var ref: DatabaseReference!
     
-//    var postData = [Post]()
+    var postData = [Post]()
+    
     var onderwerpData = [String]()
     var naamData = [String]()
     var taalData = [String]()
     var beschrijvingData = [String]()
     var datumData = [String]()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //                    let post = Post(id: postId as! String?, onderwerp: postNaam as! String?, naam: postOnderwerp as! String?, beschrijving: postBeschrijving as! String?, datum: postDatum as! String?, taal: postTaal as! String?)
                     
 //                    self.postData.append(post)
+                    
                     self.onderwerpData.append(postOnderwerp as! String)
                     self.naamData.append(postNaam as! String)
                     self.datumData.append(postDatum as! String)
@@ -92,7 +93,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailVC()
-        vc.commonInit(onderwerpData[indexPath.item])
+//        vc.commonInit(postData[indexPath.item])
         vc.commonInit2(naam: naamData[indexPath.item],
                        onderwerp: onderwerpData[indexPath.item],
                        datum: datumData[indexPath.item],

@@ -19,7 +19,8 @@ class DetailVC: UIViewController {
     @IBOutlet weak var reactieLabel: UILabel!
     @IBOutlet weak var reactieInput: UITextField!
     @IBAction func postReactie(_ sender: Any) {
-        reactieLabel.text = reactieInput.text
+        let text = reactieInput.text
+        reactieLabel.text = text
         reactieInput.text = ""
     }
     

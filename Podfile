@@ -8,6 +8,8 @@ target 'BijlessApp' do
   # Pods for BijlessApp
     pod 'Firebase/Core'
     pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+
 
   target 'BijlessAppTests' do
     inherit! :search_paths
