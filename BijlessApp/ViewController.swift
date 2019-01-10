@@ -117,7 +117,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = DetailVC()
+//        let vc = DetailVC()
 //        vc.commonInit(postData[indexPath.item])
 //        vc.commonInit2(naam: naamData[indexPath.item],
 //                       onderwerp: onderwerpData[indexPath.item],
@@ -142,7 +142,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 datum: datumData[indexPath.item],
                                 taal: taalData[indexPath.item],
                                 beschrijving: beschrijvingData[indexPath.item])
-        print("users: \(users[indexPath.row].username!)")
+//        print("users: \(users[indexPath.row].username!)")
 //        print("onderwerp: \(onderwerpData[indexPath.item])")
 //        print("taal : \(taalData[indexPath.item])")
     }

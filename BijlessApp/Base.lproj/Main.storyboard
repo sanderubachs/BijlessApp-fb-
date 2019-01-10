@@ -415,7 +415,7 @@
         <!--Chat View Controller-->
         <scene sceneID="oye-bM-62W">
             <objects>
-                <viewController id="xuN-Sl-Ty5" customClass="ChatViewController" customModule="Youtube_Chat_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xuN-Sl-Ty5" customClass="ChatViewController" customModule="BijlessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pUi-NV-ns2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -487,15 +487,21 @@
                                         <rect key="frame" x="0.0" y="369" width="375" height="234"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="170" id="O7n-ZN-hNa">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="170"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="78" id="O7n-ZN-hNa">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="78"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O7n-ZN-hNa" id="34i-ej-kMZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zq-8v-ON5">
+                                                            <rect key="frame" x="15" y="11" width="296" height="67"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Naam" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48M-gz-aig">
-                                                            <rect key="frame" x="238" y="11" width="125" height="21"/>
+                                                            <rect key="frame" x="235" y="11" width="125" height="67"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="125" id="LiZ-SQ-Vdy"/>
                                                             </constraints>
@@ -503,20 +509,14 @@
                                                             <color key="textColor" red="0.18689644450000001" green="0.49087796389999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zq-8v-ON5">
-                                                            <rect key="frame" x="15" y="11" width="296" height="148"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="2zq-8v-ON5" firstAttribute="leading" secondItem="34i-ej-kMZ" secondAttribute="leadingMargin" constant="-1" id="Gce-TE-rs0"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="2zq-8v-ON5" secondAttribute="trailing" constant="48" id="GkX-4r-4xp"/>
+                                                        <constraint firstItem="2zq-8v-ON5" firstAttribute="leading" secondItem="34i-ej-kMZ" secondAttribute="leadingMargin" id="Gce-TE-rs0"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="2zq-8v-ON5" secondAttribute="trailing" constant="49" id="GkX-4r-4xp"/>
                                                         <constraint firstItem="2zq-8v-ON5" firstAttribute="firstBaseline" secondItem="48M-gz-aig" secondAttribute="firstBaseline" id="dJ2-kr-mMf"/>
-                                                        <constraint firstItem="2zq-8v-ON5" firstAttribute="bottom" secondItem="34i-ej-kMZ" secondAttribute="bottomMargin" id="ngH-UA-us1"/>
-                                                        <constraint firstItem="2zq-8v-ON5" firstAttribute="centerY" secondItem="34i-ej-kMZ" secondAttribute="centerY" id="nxU-3e-zc6"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="48M-gz-aig" secondAttribute="trailing" constant="-4" id="y2d-84-lwo"/>
+                                                        <constraint firstItem="2zq-8v-ON5" firstAttribute="bottom" secondItem="34i-ej-kMZ" secondAttribute="bottomMargin" constant="11" id="ngH-UA-us1"/>
+                                                        <constraint firstItem="2zq-8v-ON5" firstAttribute="centerY" secondItem="34i-ej-kMZ" secondAttribute="centerY" constant="5.75" id="nxU-3e-zc6"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="48M-gz-aig" secondAttribute="trailing" id="y2d-84-lwo"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -556,6 +556,6 @@
         <image name="apple-class-conference-7104" width="5472" height="3648"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z6Y-zg-XmB"/>
+        <segue reference="Ybw-Ix-U52"/>
     </inferredMetricsTieBreakers>
 </document>

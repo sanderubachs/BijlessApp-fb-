@@ -69,9 +69,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         taalLabel.text = taalVar
         datumLabel.text = datumVar
         
-        print("naamV: \(naamVar)")
-        print("onderV: \(onderwerpVar)")
-        print("taalV: \(taalVar)")
+//        print("naamV: \(naamVar)")
+//        print("onderV: \(onderwerpVar)")
+//        print("taalV: \(taalVar)")
     }
     
     func commonInit(_ title: String) {
@@ -90,9 +90,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         beschrijvingVar = beschrijving
         taalVar = taal
         
-        print("TAAL: \(taal)")
-        print("NAAM: \(naam)")
-        print("OND: \(onderwerp)")
+//        print("TAAL: \(taal)")
+//        print("NAAM: \(naam)")
+//        print("OND: \(onderwerp)")
     }
     
     @IBAction func sendMessage(_ sender: Any) {
