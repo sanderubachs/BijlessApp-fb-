@@ -16,8 +16,10 @@ class registerViewController: UIViewController {
     @IBOutlet weak var emailInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var naamInput: UITextField!
-    @IBOutlet weak var achternaamInput: UITextField!
     @IBOutlet weak var leeftijdInput: UITextField!
+    @IBOutlet weak var semesterInput: UITextField!
+    @IBOutlet weak var richtingInput: UITextField!
+    @IBOutlet weak var specialisatieInput: UITextField!
     
     @IBOutlet weak var signInButton: UIButton!
     
@@ -28,6 +30,18 @@ class registerViewController: UIViewController {
         super.viewDidLoad()
         
         ref = Database.database().reference()
+        
+        self.hideKeyboardWhenTappedAround()
+    }
+
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(registerViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func signInButtonTapped(_ sender: Any) {
@@ -41,15 +55,19 @@ class registerViewController: UIViewController {
                 if let user = authResult?.user {
                     self.performSegue(withIdentifier: "goToHome", sender: self)
                     let inputNaam = self.naamInput.text
-                    let inputAchter = self.achternaamInput.text
                     let inputLeeftijd = self.leeftijdInput.text
+                    let inputSemester = self.semesterInput.text
+                    let inputRichting = self.richtingInput.text
+                    let inputSpecialisatie  = self.specialisatieInput.text
                     
                     //input in database zetten
                     self.ref?.child("Users").childByAutoId().setValue([
                         "userNaam": inputNaam!,
-                        "userAchternaam": inputAchter!,
                         "userLeeftijd": inputLeeftijd!,
-                        "userEmail": email
+                        "userEmail": email,
+                        "userSemester": inputSemester!,
+                        "userRichting": inputRichting!,
+                        "userSpecialisatie": inputSpecialisatie!
                         ])
                 } else {
                     return

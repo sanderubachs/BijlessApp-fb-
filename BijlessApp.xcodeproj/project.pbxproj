@@ -18,11 +18,8 @@
 		83752F2221C2A298005243BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83752F2021C2A298005243BD /* LaunchScreen.storyboard */; };
 		83752F2D21C2A298005243BD /* BijlessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F2C21C2A298005243BD /* BijlessAppTests.swift */; };
 		83752F3821C2A299005243BD /* BijlessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F3721C2A299005243BD /* BijlessAppUITests.swift */; };
-		83752F4821C2A5B6005243BD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F4721C2A5B6005243BD /* Post.swift */; };
 		83752F5021C2A8F1005243BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F4F21C2A8F0005243BD /* TableViewCell.swift */; };
 		83752F5221C2AB9B005243BD /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F5121C2AB9B005243BD /* ComposeViewController.swift */; };
-		83752F5521C2AF57005243BD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83752F5321C2AF57005243BD /* DetailVC.swift */; };
-		83752F5621C2AF57005243BD /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83752F5421C2AF57005243BD /* DetailVC.xib */; };
 		8385F07E21CCD63700C0FB67 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385F07D21CCD63700C0FB67 /* loginViewController.swift */; };
 		8385F08021CCD6D500C0FB67 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385F07F21CCD6D500C0FB67 /* registerViewController.swift */; };
 		AC59A469222C3307B5E503D0 /* Pods_BijlessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348F81E7E7362E693CD97939 /* Pods_BijlessApp.framework */; };
@@ -68,11 +65,8 @@
 		83752F3321C2A299005243BD /* BijlessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BijlessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83752F3721C2A299005243BD /* BijlessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BijlessAppUITests.swift; sourceTree = "<group>"; };
 		83752F3921C2A299005243BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83752F4721C2A5B6005243BD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		83752F4F21C2A8F0005243BD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		83752F5121C2AB9B005243BD /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
-		83752F5321C2AF57005243BD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		83752F5421C2AF57005243BD /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
 		8385F07D21CCD63700C0FB67 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = BijlessAppUITests/loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		8385F07F21CCD6D500C0FB67 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		AA1FC5EB217B72BB8CA9287C /* Pods_BijlessAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijlessAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,20 +141,18 @@
 		83752F1621C2A296005243BD /* BijlessApp */ = {
 			isa = PBXGroup;
 			children = (
-				83752F5721C2AF5F005243BD /* DetailVC */,
 				83752F1721C2A296005243BD /* AppDelegate.swift */,
 				83752F1921C2A296005243BD /* ViewController.swift */,
 				83752F4F21C2A8F0005243BD /* TableViewCell.swift */,
 				83752F5121C2AB9B005243BD /* ComposeViewController.swift */,
-				83080FEA21DF8F6F000D70B4 /* ChatViewController.swift */,
-				83752F1B21C2A296005243BD /* Main.storyboard */,
 				8385F07D21CCD63700C0FB67 /* loginViewController.swift */,
 				8385F07F21CCD6D500C0FB67 /* registerViewController.swift */,
+				83752F1B21C2A296005243BD /* Main.storyboard */,
+				83080FEA21DF8F6F000D70B4 /* ChatViewController.swift */,
 				83752F1E21C2A298005243BD /* Assets.xcassets */,
 				83752F2021C2A298005243BD /* LaunchScreen.storyboard */,
 				83752F2321C2A298005243BD /* Info.plist */,
 				8313364221C7B0D200ED399E /* GoogleService-Info.plist */,
-				83752F4721C2A5B6005243BD /* Post.swift */,
 				83080FEC21DF9EBF000D70B4 /* Helper.swift */,
 			);
 			path = BijlessApp;
@@ -182,15 +174,6 @@
 				83752F3921C2A299005243BD /* Info.plist */,
 			);
 			path = BijlessAppUITests;
-			sourceTree = "<group>";
-		};
-		83752F5721C2AF5F005243BD /* DetailVC */ = {
-			isa = PBXGroup;
-			children = (
-				83752F5321C2AF57005243BD /* DetailVC.swift */,
-				83752F5421C2AF57005243BD /* DetailVC.xib */,
-			);
-			path = DetailVC;
 			sourceTree = "<group>";
 		};
 		D6E26B7108FE1ADE515372AE /* Frameworks */ = {
@@ -315,7 +298,6 @@
 				83752F1F21C2A298005243BD /* Assets.xcassets in Resources */,
 				8313364321C7B0D200ED399E /* GoogleService-Info.plist in Resources */,
 				83752F1D21C2A296005243BD /* Main.storyboard in Resources */,
-				83752F5621C2AF57005243BD /* DetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,14 +421,12 @@
 			files = (
 				8385F07E21CCD63700C0FB67 /* loginViewController.swift in Sources */,
 				83752F5221C2AB9B005243BD /* ComposeViewController.swift in Sources */,
-				83752F4821C2A5B6005243BD /* Post.swift in Sources */,
 				8385F08021CCD6D500C0FB67 /* registerViewController.swift in Sources */,
 				83752F5021C2A8F1005243BD /* TableViewCell.swift in Sources */,
 				83752F1A21C2A296005243BD /* ViewController.swift in Sources */,
 				83752F1821C2A296005243BD /* AppDelegate.swift in Sources */,
 				83080FED21DF9EBF000D70B4 /* Helper.swift in Sources */,
 				83080FEB21DF8F6F000D70B4 /* ChatViewController.swift in Sources */,
-				83752F5521C2AF57005243BD /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

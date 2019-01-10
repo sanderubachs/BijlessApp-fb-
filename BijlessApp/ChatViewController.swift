@@ -12,9 +12,10 @@ import FirebaseDatabase
 import FirebaseAuth
 import FirebaseCore
 
-struct Post2 {
+struct Message {
     let bodyText: String!
     let username: String!
+    let userID: String!
 }
 
 var name : String?
@@ -38,7 +39,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var ref2: DatabaseReference!
     
-    var posts = [Post2]()
+    var messages = [Message]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,31 +57,35 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             let bodyText = (snapshot.value as? NSDictionary)?["bodyText"] as? String ?? ""
             let userName = (snapshot.value as? NSDictionary)?["username"] as? String ?? ""
+            let userID = (snapshot.value as? NSDictionary)?["uid"] as? String ?? ""
             
-            self.posts.insert(Post2(bodyText: bodyText, username: userName), at: 0)
+            self.messages.insert(Message(bodyText: bodyText, username: userName, userID: userID), at: 0)
             self.tableView.reloadData()
         })
         
-        tableView.reloadData()
+            tableView.reloadData()
         
-        naamLabel.text = naamVar
-        onderwerpLabel.text = onderwerpVar
-        beschrijvingLabel.text = beschrijvingVar
-        taalLabel.text = taalVar
-        datumLabel.text = datumVar
+            naamLabel.text = naamVar
+            onderwerpLabel.text = onderwerpVar
+            beschrijvingLabel.text = beschrijvingVar
+            taalLabel.text = taalVar
+            datumLabel.text = datumVar
         
-//        print("naamV: \(naamVar)")
-//        print("onderV: \(onderwerpVar)")
-//        print("taalV: \(taalVar)")
+        self.hideKeyboardWhenTappedAround()
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ChatViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     func commonInit(_ title: String) {
-        //        navigationItem.title = "harry"
-        //        self.title = title
-        
         name = title
-        
-        print("title: \(title)")
     }
     
     func commonInit2(naam: String, onderwerp: String, datum: String, taal: String, beschrijving: String) {
@@ -89,10 +94,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         datumVar = datum
         beschrijvingVar = beschrijving
         taalVar = taal
-        
-//        print("TAAL: \(taal)")
-//        print("NAAM: \(naam)")
-//        print("OND: \(onderwerp)")
     }
     
     @IBAction func sendMessage(_ sender: Any) {
@@ -106,10 +107,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                     let user_snap = user_child as! DataSnapshot
                     let dict = user_snap.value as! [String: String?]
                     
-                    // DEFINE VARIABLES FOR LABELS
+                    // variabelen opslaan voor labels
                     let voornaam = dict["userNaam"] as? String
-                    let achternaam = dict["userAchternaam"] as? String
-                    let username = "\(voornaam!) \(achternaam!)"
+                    let username = voornaam!
                     print(username)
                     
                     let database = Database.database().reference()
@@ -125,22 +125,28 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return messages.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 65
+        return 90
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let bodyText = cell.viewWithTag(1) as! UILabel
-        bodyText.text = posts[indexPath.row].bodyText
+        bodyText.text = messages[indexPath.row].bodyText
         [bodyText .sizeToFit()]
         
-        
         let nameText = cell.viewWithTag(2) as! UILabel
-        nameText.text = posts[indexPath.row].username
+        nameText.text = messages[indexPath.row].username
+        
+//        if (Auth.auth().currentUser?.uid == messages[indexPath.row].userID){
+//            cell.backgroundColor = .blue
+//            //            cell.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+//            bodyText.textColor = .white
+//            nameText.textColor = .white
+//        }
         
         return cell
     }

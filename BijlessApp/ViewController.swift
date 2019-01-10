@@ -25,8 +25,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     var ref: DatabaseReference!
     
-//    var postData = [Post]()
-    
     var onderwerpData = [String]()
     var naamData = [String]()
     var taalData = [String]()
@@ -57,7 +55,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         ref = Database.database().reference().child("Posts")
         ref.observe(DataEventType.value, with: { (snapshot) in
             if snapshot.childrenCount>0{
-//                self.postData.removeAll()
                 self.naamData.removeAll()
                 self.onderwerpData.removeAll()
                 self.taalData.removeAll()
@@ -73,10 +70,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     let postOnderwerp = postObject?["postOnderwerp"]
                     let postTaal = postObject?["postTaal"]
                     
-//                    let post = Post(id: postId as! String?, onderwerp: postNaam as! String?, naam: postOnderwerp as! String?, beschrijving: postBeschrijving as! String?, datum: postDatum as! String?, taal: postTaal as! String?)
-                    
-//                    self.postData.append(post)
-                    
                     self.onderwerpData.append(postOnderwerp as! String)
                     self.naamData.append(postNaam as! String)
                     self.datumData.append(postDatum as! String)
@@ -89,7 +82,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return postData.count
         return naamData.count
     }
     
@@ -100,13 +92,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
-//        let post: Post
-        
-//        post = postData[indexPath.row]
-        
-//        cell.lblNaam.text = post.naam
-//        cell.lblOnderwerp.text = post.onderwerp
-        
         cell.lblNaam.text = naamData[indexPath.row]
         cell.lblOnderwerp.text = onderwerpData[indexPath.row]
         cell.lblDatum.text = datumData[indexPath.row]
@@ -117,22 +102,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let vc = DetailVC()
-//        vc.commonInit(postData[indexPath.item])
-//        vc.commonInit2(naam: naamData[indexPath.item],
-//                       onderwerp: onderwerpData[indexPath.item],
-//                       datum: datumData[indexPath.item],
-//                       taal: taalData[indexPath.item],
-//                       beschrijving: beschrijvingData[indexPath.item]
-//                      )
-//        self.navigationController?.pushViewController(vc, animated: true)
-//        self.tableView.deselectRow(at: indexPath, animated: true)
-//
-////        print("postData: \(postData)")
-//        print("naamData: \(naamData)")
-//        print("onderwerpData: \(onderwerpData)")
-//
-        
         currentUserChatId = users[indexPath.row].uid
         
         let vcChat = ChatViewController()
@@ -142,9 +111,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 datum: datumData[indexPath.item],
                                 taal: taalData[indexPath.item],
                                 beschrijving: beschrijvingData[indexPath.item])
-//        print("users: \(users[indexPath.row].username!)")
-//        print("onderwerp: \(onderwerpData[indexPath.item])")
-//        print("taal : \(taalData[indexPath.item])")
     }
 }
 

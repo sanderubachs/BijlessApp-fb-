@@ -23,6 +23,18 @@ class ComposeViewController: UIViewController {
         super.viewDidLoad()
 
         ref = Database.database().reference()
+        
+        self.hideKeyboardWhenTappedAround()
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ComposeViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func addPost(_ sender: Any) {
@@ -40,25 +52,20 @@ class ComposeViewController: UIViewController {
                     let user_snap = user_child as! DataSnapshot
                     let dict = user_snap.value as! [String: String?]
                     
-                    // DEFINE VARIABLES FOR LABELS
                     let voorNaam = dict["userNaam"] as? String
-                    let achterNaam = dict["userAchternaam"] as? String
         
                     //input variables
-                    let naamInput = "\(voorNaam!) \(achterNaam!)"
+                    let naamInput = voorNaam!
                     let onderwerpInput = self.inputOnderwerp.text
                     let taalInput = self.inputTaal.text
                     let beschrijvingInput = self.inputBeschrijving.text
                     
-//       datum input
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let myString = formatter.string(from: Date())
         let date = formatter.date(from: myString)
         formatter.dateFormat = "dd-MM-yyyy HH:mm"
         let datumInput = formatter.string(from: date!)
-        
-//        print(datumInput)
         
         //input in database zetten
             self.ref?.child("Posts").childByAutoId().setValue([
