@@ -61,6 +61,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             self.messages.insert(Message(bodyText: bodyText, username: userName, userID: userID), at: 0)
             self.tableView.reloadData()
+//            print("message: \(bodyText)")
         })
         
             tableView.reloadData()
@@ -140,13 +141,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let nameText = cell.viewWithTag(2) as! UILabel
         nameText.text = messages[indexPath.row].username
-        
-//        if (Auth.auth().currentUser?.uid == messages[indexPath.row].userID){
-//            cell.backgroundColor = .blue
-//            //            cell.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
-//            bodyText.textColor = .white
-//            nameText.textColor = .white
-//        }
+
         
         return cell
     }

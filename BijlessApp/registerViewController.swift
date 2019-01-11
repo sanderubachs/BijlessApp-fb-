@@ -48,8 +48,6 @@ class registerViewController: UIViewController {
         //email validation
         if let email = emailInput.text, let pass = passwordInput.text{
             
-            //check if it's sign in or register
-            //register the user
             Auth.auth().createUser(withEmail: email, password: pass) { (authResult, error) in
                 // ...
                 if let user = authResult?.user {
@@ -59,6 +57,7 @@ class registerViewController: UIViewController {
                     let inputSemester = self.semesterInput.text
                     let inputRichting = self.richtingInput.text
                     let inputSpecialisatie  = self.specialisatieInput.text
+                    let uid = Auth.auth().currentUser?.uid
                     
                     //input in database zetten
                     self.ref?.child("Users").childByAutoId().setValue([
@@ -67,7 +66,8 @@ class registerViewController: UIViewController {
                         "userEmail": email,
                         "userSemester": inputSemester!,
                         "userRichting": inputRichting!,
-                        "userSpecialisatie": inputSpecialisatie!
+                        "userSpecialisatie": inputSpecialisatie!,
+                        "uid": uid
                         ])
                 } else {
                     return

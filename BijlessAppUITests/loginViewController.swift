@@ -23,12 +23,12 @@ class loginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Auth.auth().addStateDidChangeListener({
-            auth, user in
-            if user != nil {
-                Helper.helper.switchToNavigationVC()
-            }
-        })
+//        Auth.auth().addStateDidChangeListener({
+//            auth, user in
+//            if user != nil {
+//                Helper.helper.switchToNavigationVC()
+//            }
+//        })
         
         self.hideKeyboardWhenTappedAround()
     }
